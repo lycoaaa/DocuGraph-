@@ -5,6 +5,8 @@ DocuGraph 将传统办公文档一步自动转换为 **可交互知识图谱**�
 它包含三条串联的轻量模块：**格式转换 → 结构抽取 → 图谱渲染** 
 让你在本地或服务器上只需一行命令，就能把 `.docx` 变成跨平台浏览器可视化结果。
 
+![image](https://github.com/user-attachments/assets/096d4907-a129-4c23-949a-debe2c0f511c)
+
 ---
 
 ## Features
