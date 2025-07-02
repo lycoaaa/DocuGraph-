@@ -1,4 +1,4 @@
-# DocuGraph-
+# DocuGraph
 A lightweight pipeline that instantly converts Word documents into interactive knowledge graphs with a single command/一款轻量级流水线工具，只需一条命令即可把 Word 等办公文档自动转化为交互式知识图谱
 
 DocuGraph 将传统办公文档一步自动转换为 **可交互知识图谱**。  
