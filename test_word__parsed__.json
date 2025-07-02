@@ -1,0 +1,546 @@
+{
+  "entities": [
+    {
+      "id": "E1",
+      "label": "电能系统",
+      "type": "系统"
+    },
+    {
+      "id": "E2",
+      "label": "电池系统",
+      "type": "子系统"
+    },
+    {
+      "id": "E3",
+      "label": "电芯",
+      "type": "部件"
+    },
+    {
+      "id": "E4",
+      "label": "电池模组",
+      "type": "部件"
+    },
+    {
+      "id": "E5",
+      "label": "电池包",
+      "type": "部件"
+    },
+    {
+      "id": "E6",
+      "label": "电池管理系统BMS",
+      "type": "部件"
+    },
+    {
+      "id": "E7",
+      "label": "充电系统",
+      "type": "子系统"
+    },
+    {
+      "id": "E8",
+      "label": "车载充电机（OBC）",
+      "type": "部件"
+    },
+    {
+      "id": "E9",
+      "label": "快充接口",
+      "type": "部件"
+    },
+    {
+      "id": "E10",
+      "label": "慢充接口",
+      "type": "部件"
+    },
+    {
+      "id": "E11",
+      "label": "驱动系统",
+      "type": "系统"
+    },
+    {
+      "id": "E12",
+      "label": "电驱动系统",
+      "type": "子系统"
+    },
+    {
+      "id": "E13",
+      "label": "驱动电机",
+      "type": "部件"
+    },
+    {
+      "id": "E14",
+      "label": "减速器",
+      "type": "部件"
+    },
+    {
+      "id": "E15",
+      "label": "控制逆变器",
+      "type": "部件"
+    },
+    {
+      "id": "E16",
+      "label": "动力传动系统",
+      "type": "子系统"
+    },
+    {
+      "id": "E17",
+      "label": "半轴",
+      "type": "部件"
+    },
+    {
+      "id": "E18",
+      "label": "驱动桥",
+      "type": "部件"
+    },
+    {
+      "id": "E19",
+      "label": "控制系统",
+      "type": "系统"
+    },
+    {
+      "id": "E20",
+      "label": "整车控制系统",
+      "type": "子系统"
+    },
+    {
+      "id": "E21",
+      "label": "VCU（整车控制器）",
+      "type": "部件"
+    },
+    {
+      "id": "E22",
+      "label": "通讯总线",
+      "type": "部件"
+    },
+    {
+      "id": "E23",
+      "label": "动力控制系统",
+      "type": "子系统"
+    },
+    {
+      "id": "E24",
+      "label": "MCU（电机控制器）",
+      "type": "部件"
+    },
+    {
+      "id": "E25",
+      "label": "DC-DC转换器",
+      "type": "部件"
+    },
+    {
+      "id": "E26",
+      "label": "能量管理系统",
+      "type": "子系统"
+    },
+    {
+      "id": "E27",
+      "label": "EMS（能量管理系统）",
+      "type": "部件"
+    },
+    {
+      "id": "E28",
+      "label": "热管理系统",
+      "type": "子系统"
+    },
+    {
+      "id": "E29",
+      "label": "电池冷却系统",
+      "type": "部件"
+    },
+    {
+      "id": "E30",
+      "label": "液冷板",
+      "type": "部件"
+    },
+    {
+      "id": "E31",
+      "label": "冷却泵",
+      "type": "部件"
+    },
+    {
+      "id": "E32",
+      "label": "热泵",
+      "type": "部件"
+    },
+    {
+      "id": "E33",
+      "label": "驱动系统冷却",
+      "type": "部件"
+    },
+    {
+      "id": "E34",
+      "label": "冷却液循环",
+      "type": "部件"
+    },
+    {
+      "id": "E35",
+      "label": "热交换器",
+      "type": "部件"
+    },
+    {
+      "id": "E36",
+      "label": "车身结构系统",
+      "type": "系统"
+    },
+    {
+      "id": "E37",
+      "label": "底盘系统",
+      "type": "子系统"
+    },
+    {
+      "id": "E38",
+      "label": "悬架",
+      "type": "部件"
+    },
+    {
+      "id": "E39",
+      "label": "制动系统",
+      "type": "部件"
+    },
+    {
+      "id": "E40",
+      "label": "转向系统",
+      "type": "部件"
+    },
+    {
+      "id": "E41",
+      "label": "车身与车架",
+      "type": "子系统"
+    },
+    {
+      "id": "E42",
+      "label": "车体框架",
+      "type": "部件"
+    },
+    {
+      "id": "E43",
+      "label": "高强度钢板",
+      "type": "部件"
+    },
+    {
+      "id": "E44",
+      "label": "内饰与人机交互",
+      "type": "子系统"
+    },
+    {
+      "id": "E45",
+      "label": "仪表盘",
+      "type": "部件"
+    },
+    {
+      "id": "E46",
+      "label": "中控屏",
+      "type": "部件"
+    },
+    {
+      "id": "E47",
+      "label": "HUD",
+      "type": "部件"
+    },
+    {
+      "id": "E48",
+      "label": "智能辅助系统",
+      "type": "子系统"
+    },
+    {
+      "id": "E49",
+      "label": "网联系统",
+      "type": "部件"
+    },
+    {
+      "id": "E50",
+      "label": "5G模块",
+      "type": "部件"
+    },
+    {
+      "id": "E51",
+      "label": "OTA",
+      "type": "部件"
+    },
+    {
+      "id": "E52",
+      "label": "T-Box",
+      "type": "部件"
+    },
+    {
+      "id": "E53",
+      "label": "辅助驾驶系统",
+      "type": "部件"
+    },
+    {
+      "id": "E54",
+      "label": "摄像头",
+      "type": "部件"
+    },
+    {
+      "id": "E55",
+      "label": "毫米波雷达",
+      "type": "部件"
+    },
+    {
+      "id": "E56",
+      "label": "超声波传感器",
+      "type": "部件"
+    }
+  ],
+  "relations": [
+    {
+      "source": "E1",
+      "target": "E2",
+      "type": "包含"
+    },
+    {
+      "source": "E1",
+      "target": "E7",
+      "type": "包含"
+    },
+    {
+      "source": "E2",
+      "target": "E3",
+      "type": "包含"
+    },
+    {
+      "source": "E2",
+      "target": "E4",
+      "type": "包含"
+    },
+    {
+      "source": "E2",
+      "target": "E5",
+      "type": "包含"
+    },
+    {
+      "source": "E2",
+      "target": "E6",
+      "type": "包含"
+    },
+    {
+      "source": "E7",
+      "target": "E8",
+      "type": "包含"
+    },
+    {
+      "source": "E7",
+      "target": "E9",
+      "type": "包含"
+    },
+    {
+      "source": "E7",
+      "target": "E10",
+      "type": "包含"
+    },
+    {
+      "source": "E11",
+      "target": "E12",
+      "type": "包含"
+    },
+    {
+      "source": "E11",
+      "target": "E16",
+      "type": "包含"
+    },
+    {
+      "source": "E12",
+      "target": "E13",
+      "type": "包含"
+    },
+    {
+      "source": "E12",
+      "target": "E14",
+      "type": "包含"
+    },
+    {
+      "source": "E12",
+      "target": "E15",
+      "type": "包含"
+    },
+    {
+      "source": "E16",
+      "target": "E17",
+      "type": "包含"
+    },
+    {
+      "source": "E16",
+      "target": "E18",
+      "type": "包含"
+    },
+    {
+      "source": "E19",
+      "target": "E20",
+      "type": "包含"
+    },
+    {
+      "source": "E19",
+      "target": "E23",
+      "type": "包含"
+    },
+    {
+      "source": "E19",
+      "target": "E26",
+      "type": "包含"
+    },
+    {
+      "source": "E19",
+      "target": "E28",
+      "type": "包含"
+    },
+    {
+      "source": "E20",
+      "target": "E21",
+      "type": "包含"
+    },
+    {
+      "source": "E20",
+      "target": "E22",
+      "type": "包含"
+    },
+    {
+      "source": "E23",
+      "target": "E24",
+      "type": "包含"
+    },
+    {
+      "source": "E23",
+      "target": "E25",
+      "type": "包含"
+    },
+    {
+      "source": "E26",
+      "target": "E27",
+      "type": "包含"
+    },
+    {
+      "source": "E28",
+      "target": "E29",
+      "type": "包含"
+    },
+    {
+      "source": "E28",
+      "target": "E33",
+      "type": "包含"
+    },
+    {
+      "source": "E29",
+      "target": "E30",
+      "type": "包含"
+    },
+    {
+      "source": "E29",
+      "target": "E31",
+      "type": "包含"
+    },
+    {
+      "source": "E29",
+      "target": "E32",
+      "type": "包含"
+    },
+    {
+      "source": "E33",
+      "target": "E34",
+      "type": "包含"
+    },
+    {
+      "source": "E33",
+      "target": "E35",
+      "type": "包含"
+    },
+    {
+      "source": "E36",
+      "target": "E37",
+      "type": "包含"
+    },
+    {
+      "source": "E36",
+      "target": "E41",
+      "type": "包含"
+    },
+    {
+      "source": "E36",
+      "target": "E44",
+      "type": "包含"
+    },
+    {
+      "source": "E36",
+      "target": "E48",
+      "type": "包含"
+    },
+    {
+      "source": "E37",
+      "target": "E38",
+      "type": "包含"
+    },
+    {
+      "source": "E37",
+      "target": "E39",
+      "type": "包含"
+    },
+    {
+      "source": "E37",
+      "target": "E40",
+      "type": "包含"
+    },
+    {
+      "source": "E41",
+      "target": "E42",
+      "type": "包含"
+    },
+    {
+      "source": "E41",
+      "target": "E43",
+      "type": "包含"
+    },
+    {
+      "source": "E44",
+      "target": "E45",
+      "type": "包含"
+    },
+    {
+      "source": "E44",
+      "target": "E46",
+      "type": "包含"
+    },
+    {
+      "source": "E44",
+      "target": "E47",
+      "type": "包含"
+    },
+    {
+      "source": "E48",
+      "target": "E49",
+      "type": "包含"
+    },
+    {
+      "source": "E48",
+      "target": "E53",
+      "type": "包含"
+    },
+    {
+      "source": "E49",
+      "target": "E50",
+      "type": "包含"
+    },
+    {
+      "source": "E49",
+      "target": "E51",
+      "type": "包含"
+    },
+    {
+      "source": "E49",
+      "target": "E52",
+      "type": "包含"
+    },
+    {
+      "source": "E53",
+      "target": "E54",
+      "type": "包含"
+    },
+    {
+      "source": "E53",
+      "target": "E55",
+      "type": "包含"
+    },
+    {
+      "source": "E53",
+      "target": "E56",
+      "type": "包含"
+    }
+  ]
+}
