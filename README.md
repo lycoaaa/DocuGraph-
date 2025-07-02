@@ -12,7 +12,6 @@ DocuGraph 将传统办公文档一步自动转换为 **可交互知识图谱**�
 * **One-Command Pipeline** – `python main.py your.docx` 即可完成全部流程  
 * **Large-Language-Model Extraction** – DeepSeek API 精准抽取实体 / 关系  
 * **Zero Front-End Code** – `pyvis` + `networkx` 自动生成 HTML，窗口大小自适应  
-* **Clean Python 3.10/3.11 Stack** – 依赖集中在 `requirements.txt`，易于虚拟环境部署  
 * **可扩展** – 只需替换第一步转换脚本，即可支持 PDF、Excel 等多格式输入
 
 ---
@@ -40,9 +39,33 @@ python main.py /path/to/your.docx
 ## Architecture
 
 ```
-┌──────────┐   .docx    ┌───────────┐   Markdown   ┌────────────┐   JSON   ┌─────────┐  HTML
-│ word2md  │ ─────────▶ │ extractor │ ───────────▶ │ build_kg   │ ───────▶ │ Browser │
-└──────────┘ mammoth    │ DeepSeek  │ 结构化抽取    │ pyvis+nx   │ 渲染     └─────────┘
+          .docx
+┌──────────────────┐
+│     word2md      │
+│    (mammoth)     │
+└──────────────────┘
+          │
+          ▼
+      Markdown
+┌──────────────────┐
+│    extractor     │
+│    (DeepSeek)    │
+└──────────────────┘
+          │
+          ▼
+        JSON
+┌──────────────────┐
+│     build_kg     │
+│    (pyvis+nx)    │
+└──────────────────┘
+          │
+          ▼
+        HTML
+┌──────────────────┐
+│     Browser      │
+│     (viewer)     │
+└──────────────────┘
+
 ```
 
 1. **word2md.py** – 利用 *mammoth* 将 Word 转 Markdown
