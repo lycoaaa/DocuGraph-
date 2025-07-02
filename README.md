@@ -19,11 +19,6 @@ DocuGraph 将传统办公文档一步自动转换为 **可交互知识图谱**�
 ## Quick Start
 
 ```bash
-git clone https://github.com/<you>/DocuGraph.git
-cd DocuGraph
-python -m venv .venv && source .venv/bin/activate  # Windows 用 .venv\Scripts\activate
-pip install -r requirements.txt                    # 若暂不需要深度学习，可先注释 torch
-
 # 配置 DeepSeek Key（Windows 使用 $env:DEEPSEEK_API_KEY="sk-xxxx"）
 export DEEPSEEK_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx
 
