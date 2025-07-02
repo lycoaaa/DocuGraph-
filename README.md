@@ -1,16 +1,6 @@
 # DocuGraph-
 A lightweight pipeline that instantly converts Word documents into interactive knowledge graphs with a single command/一款轻量级流水线工具，只需一条命令即可把 Word 等办公文档自动转化为交互式知识图谱
 
-
-# 项目名
-
-**DocuGraph** – *From Documents to Interactive Knowledge Graphs*
-
----
-
-# README（Markdown 完整版，可直接 `README.md` 粘贴）
-
-````markdown
 # DocuGraph
 
 DocuGraph 将传统办公文档一步自动转换为 **可交互知识图谱**。  
@@ -72,20 +62,3 @@ python main.py /path/to/your.docx
 
 ---
 
-## Roadmap
-
-* 支持 **PDF / Excel / CSV** 转 Markdown
-* 对大模型输出做正则裁剪，提升 JSON 容错率
-* 加入 **Dockerfile** 与 GitHub Actions 自动发布
-* 丰富图谱交互（节点分组隐藏 / 搜索高亮）
-
----
-
-## License
-
-MIT © 2025 YourName
-
-```
-
-— 复制自此处至文件末尾即可。祝上传 GitHub 顺利！
-```
