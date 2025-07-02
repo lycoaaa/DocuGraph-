@@ -34,7 +34,7 @@ python main.py /path/to/your.docx
 ## Architecture
 
 ```
-          .docx
+       .docx
 ┌──────────────────┐
 │     word2md      │
 │    (mammoth)     │
