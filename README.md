@@ -1,2 +1,91 @@
 # DocuGraph-
 A lightweight pipeline that instantly converts Word documents into interactive knowledge graphs with a single command/一款轻量级流水线工具，只需一条命令即可把 Word 等办公文档自动转化为交互式知识图谱
+
+
+# 项目名
+
+**DocuGraph** – *From Documents to Interactive Knowledge Graphs*
+
+---
+
+# README（Markdown 完整版，可直接 `README.md` 粘贴）
+
+````markdown
+# DocuGraph
+
+DocuGraph 将传统办公文档一步自动转换为 **可交互知识图谱**。  
+它包含三条串联的轻量模块 —— **格式转换 → 结构抽取 → 图谱渲染** ——  
+让你在本地或服务器上只需一行命令，就能把 `.docx` 变成跨平台浏览器可视化结果。
+
+---
+
+## Features
+
+* **One-Command Pipeline** – `python main.py your.docx` 即可完成全部流程  
+* **Large-Language-Model Extraction** – DeepSeek API 精准抽取实体 / 关系  
+* **Zero Front-End Code** – `pyvis` + `networkx` 自动生成 HTML，窗口大小自适应  
+* **Clean Python 3.10/3.11 Stack** – 依赖集中在 `requirements.txt`，易于虚拟环境部署  
+* **可扩展** – 只需替换第一步转换脚本，即可支持 PDF、Excel 等多格式输入
+
+---
+
+## Quick Start
+
+```bash
+git clone https://github.com/<you>/DocuGraph.git
+cd DocuGraph
+python -m venv .venv && source .venv/bin/activate  # Windows 用 .venv\Scripts\activate
+pip install -r requirements.txt                    # 若暂不需要深度学习，可先注释 torch
+
+# 配置 DeepSeek Key（Windows 使用 $env:DEEPSEEK_API_KEY="sk-xxxx"）
+export DEEPSEEK_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx
+
+python main.py /path/to/your.docx
+````
+
+运行完毕后，你会在同目录看到
+`your__parsed__.json` — 结构化抽取结果
+`your__parsed__kg.html` — 交互式知识图谱（浏览器打开查看）
+
+---
+
+## Architecture
+
+```
+┌──────────┐   .docx    ┌───────────┐   Markdown   ┌────────────┐   JSON   ┌─────────┐  HTML
+│ word2md  │ ─────────▶ │ extractor │ ───────────▶ │ build_kg   │ ───────▶ │ Browser │
+└──────────┘ mammoth    │ DeepSeek  │ 结构化抽取    │ pyvis+nx   │ 渲染     └─────────┘
+```
+
+1. **word2md.py** – 利用 *mammoth* 将 Word 转 Markdown
+2. **extract\_json.py** – 拼接 `SCHEMA_NOTE` 调用 DeepSeek，解析干净 JSON
+3. **build\_kg.py** – 把实体/关系喂给 *networkx*，用 *pyvis* 生成全屏自适应图谱
+4. **main.py** – 串联三步，打印进度与输出路径
+
+---
+
+## Configuration
+
+* **SCHEMA\_NOTE**：位于 `extract_json.py` 顶部，可按业务修改实体 / 关系 schema
+* **网络代理**：如公司网络需代理，请在 `call_llm.py` 内部注入 `proxies` 参数
+* **视觉主题**：更换节点颜色或布局，只需改 `build_kg.py` 中 `Network(...)` 参数
+
+---
+
+## Roadmap
+
+* 支持 **PDF / Excel / CSV** 转 Markdown
+* 对大模型输出做正则裁剪，提升 JSON 容错率
+* 加入 **Dockerfile** 与 GitHub Actions 自动发布
+* 丰富图谱交互（节点分组隐藏 / 搜索高亮）
+
+---
+
+## License
+
+MIT © 2025 YourName
+
+```
+
+— 复制自此处至文件末尾即可。祝上传 GitHub 顺利！
+```
